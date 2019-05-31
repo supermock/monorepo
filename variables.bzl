@@ -1,0 +1,2 @@
+DOCKER_REGISTRY_URL = "localhost:5000"
+DOCKER_REPOSITORY = "monorepo"
