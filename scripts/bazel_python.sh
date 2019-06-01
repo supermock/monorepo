@@ -32,7 +32,7 @@ if [ ! -z ${VIRTUAL_ENV+x} ]; then
   exit 0
 fi
 
-WORKDIR="$(realpath $BASEDIR/..)/bazel-python"
+WORKDIR="$(realpath $BASEDIR/../build)/bazel-python"
 
 log_i "Working on $WORKDIR"
 
