@@ -1,6 +1,14 @@
 # The following flags are set to test use of new features for python toolchains
 # These flags will only work with Bazel 0.25.0 or above.
-common --symlink_prefix=build/bazel-
-common --workspace_status_command=scripts/bazel_workspace_status.sh
-common --host_force_python=PY2
-common --incompatible_use_python_toolchains
+build --symlink_prefix=build/bazel-
+build --workspace_status_command=scripts/bazel_workspace_status.sh
+build --host_force_python=PY2
+build --incompatible_use_python_toolchains
+run --symlink_prefix=build/bazel-
+run --workspace_status_command=scripts/bazel_workspace_status.sh
+run --host_force_python=PY2
+run --incompatible_use_python_toolchains
+test --symlink_prefix=build/bazel-
+test --workspace_status_command=scripts/bazel_workspace_status.sh
+test --host_force_python=PY2
+test --incompatible_use_python_toolchains
